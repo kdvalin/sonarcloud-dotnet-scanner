@@ -4,3 +4,5 @@ ENV PATH="${PATH}:/root/.dotnet/tools"
 
 RUN dotnet tool install dotnet-sonarscanner -g
 RUN dotnet tool install JetBrains.dotCover.GlobalTool -g
+RUN apt update
+RUN apt install -y openjdk-11-jdk
